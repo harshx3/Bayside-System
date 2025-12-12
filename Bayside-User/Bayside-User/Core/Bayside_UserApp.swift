@@ -11,7 +11,7 @@ import SwiftUI
 struct Bayside_UserApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }

@@ -12,20 +12,18 @@
 		50FCB0802EEB9AFB0044E84C /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 50FCB07F2EEB9AFB0044E84C /* Realtime */; };
 		50FCB0822EEB9AFB0044E84C /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 50FCB0812EEB9AFB0044E84C /* Storage */; };
 		50FCB0862EEB9F9A0044E84C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 50FCB0852EEB9F9A0044E84C /* Config.xcconfig */; };
+		50FCB0962EEBC1B60044E84C /* AdminRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FCB0922EEBC1B60044E84C /* AdminRootView.swift */; };
+		50FCB0972EEBC1B60044E84C /* Bayside_AdminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FCB0942EEBC1B60044E84C /* Bayside_AdminApp.swift */; };
+		50FCB0982EEBC1B60044E84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FCB0932EEBC1B60044E84C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50FCB05D2EEB9A4B0044E84C /* Bayside-Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bayside-Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FCB0852EEB9F9A0044E84C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../Config.xcconfig; sourceTree = SOURCE_ROOT; };
+		50FCB0922EEBC1B60044E84C /* AdminRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminRootView.swift; sourceTree = "<group>"; };
+		50FCB0932EEBC1B60044E84C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50FCB0942EEBC1B60044E84C /* Bayside_AdminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayside_AdminApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		50FCB05F2EEB9A4B0044E84C /* Bayside-Admin */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Bayside-Admin";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		50FCB05A2EEB9A4B0044E84C /* Frameworks */ = {
@@ -45,8 +43,7 @@
 		50FCB0542EEB9A4B0044E84C = {
 			isa = PBXGroup;
 			children = (
-				50FCB0852EEB9F9A0044E84C /* Config.xcconfig */,
-				50FCB05F2EEB9A4B0044E84C /* Bayside-Admin */,
+				50FCB0952EEBC1B60044E84C /* Bayside-Admin */,
 				50FCB05E2EEB9A4B0044E84C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +54,49 @@
 				50FCB05D2EEB9A4B0044E84C /* Bayside-Admin.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		50FCB0952EEBC1B60044E84C /* Bayside-Admin */ = {
+			isa = PBXGroup;
+			children = (
+				50FCB09C2EEBC1D30044E84C /* Models */,
+				50FCB09B2EEBC1CD0044E84C /* Services */,
+				50FCB09A2EEBC1C60044E84C /* Features */,
+				50FCB0992EEBC1BE0044E84C /* Core */,
+			);
+			path = "Bayside-Admin";
+			sourceTree = "<group>";
+		};
+		50FCB0992EEBC1BE0044E84C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				50FCB0932EEBC1B60044E84C /* Assets.xcassets */,
+				50FCB0942EEBC1B60044E84C /* Bayside_AdminApp.swift */,
+				50FCB0852EEB9F9A0044E84C /* Config.xcconfig */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		50FCB09A2EEBC1C60044E84C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				50FCB0922EEBC1B60044E84C /* AdminRootView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		50FCB09B2EEBC1CD0044E84C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		50FCB09C2EEBC1D30044E84C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,9 +113,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				50FCB05F2EEB9A4B0044E84C /* Bayside-Admin */,
 			);
 			name = "Bayside-Admin";
 			packageProductDependencies = (
@@ -130,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FCB0982EEBC1B60044E84C /* Assets.xcassets in Resources */,
 				50FCB0862EEB9F9A0044E84C /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FCB0962EEBC1B60044E84C /* AdminRootView.swift in Sources */,
+				50FCB0972EEBC1B60044E84C /* Bayside_AdminApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

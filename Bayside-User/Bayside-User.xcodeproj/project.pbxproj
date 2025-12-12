@@ -12,20 +12,18 @@
 		50FCB0772EEB9ADC0044E84C /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 50FCB0762EEB9ADC0044E84C /* Realtime */; };
 		50FCB0792EEB9ADC0044E84C /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 50FCB0782EEB9ADC0044E84C /* Storage */; };
 		50FCB0842EEB9CA00044E84C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 50FCB0832EEB9CA00044E84C /* Config.xcconfig */; };
+		50FCB08B2EEBC0C30044E84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FCB0872EEBC0C30044E84C /* Assets.xcassets */; };
+		50FCB08C2EEBC0C30044E84C /* Bayside_UserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FCB0882EEBC0C30044E84C /* Bayside_UserApp.swift */; };
+		50FCB08D2EEBC0C30044E84C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FCB0892EEBC0C30044E84C /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50FCB01B2EEB98990044E84C /* Bayside-User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bayside-User.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FCB0832EEB9CA00044E84C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../Config.xcconfig; sourceTree = SOURCE_ROOT; };
+		50FCB0872EEBC0C30044E84C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50FCB0882EEBC0C30044E84C /* Bayside_UserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayside_UserApp.swift; sourceTree = "<group>"; };
+		50FCB0892EEBC0C30044E84C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		50FCB01D2EEB98990044E84C /* Bayside-User */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Bayside-User";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		50FCB0182EEB98990044E84C /* Frameworks */ = {
@@ -45,8 +43,7 @@
 		50FCB0122EEB98990044E84C = {
 			isa = PBXGroup;
 			children = (
-				50FCB0832EEB9CA00044E84C /* Config.xcconfig */,
-				50FCB01D2EEB98990044E84C /* Bayside-User */,
+				50FCB08A2EEBC0C30044E84C /* Bayside-User */,
 				50FCB01C2EEB98990044E84C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +54,49 @@
 				50FCB01B2EEB98990044E84C /* Bayside-User.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		50FCB08A2EEBC0C30044E84C /* Bayside-User */ = {
+			isa = PBXGroup;
+			children = (
+				50FCB0912EEBC1460044E84C /* Models */,
+				50FCB0902EEBC13B0044E84C /* Services */,
+				50FCB08F2EEBC12B0044E84C /* Features */,
+				50FCB08E2EEBC1170044E84C /* Core */,
+			);
+			path = "Bayside-User";
+			sourceTree = "<group>";
+		};
+		50FCB08E2EEBC1170044E84C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				50FCB0832EEB9CA00044E84C /* Config.xcconfig */,
+				50FCB0872EEBC0C30044E84C /* Assets.xcassets */,
+				50FCB0882EEBC0C30044E84C /* Bayside_UserApp.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		50FCB08F2EEBC12B0044E84C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				50FCB0892EEBC0C30044E84C /* MainTabView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		50FCB0902EEBC13B0044E84C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		50FCB0912EEBC1460044E84C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,9 +113,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				50FCB01D2EEB98990044E84C /* Bayside-User */,
 			);
 			name = "Bayside-User";
 			packageProductDependencies = (
@@ -130,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FCB08B2EEBC0C30044E84C /* Assets.xcassets in Resources */,
 				50FCB0842EEB9CA00044E84C /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FCB08C2EEBC0C30044E84C /* Bayside_UserApp.swift in Sources */,
+				50FCB08D2EEBC0C30044E84C /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
