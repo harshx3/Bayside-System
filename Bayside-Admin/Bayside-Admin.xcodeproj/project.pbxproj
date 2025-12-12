@@ -23,6 +23,7 @@
 		50FCB0922EEBC1B60044E84C /* AdminRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminRootView.swift; sourceTree = "<group>"; };
 		50FCB0932EEBC1B60044E84C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50FCB0942EEBC1B60044E84C /* Bayside_AdminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayside_AdminApp.swift; sourceTree = "<group>"; };
+		50FCB0A32EEBCAD40044E84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 		50FCB0952EEBC1B60044E84C /* Bayside-Admin */ = {
 			isa = PBXGroup;
 			children = (
+				50FCB0A32EEBCAD40044E84C /* Info.plist */,
 				50FCB09C2EEBC1D30044E84C /* Models */,
 				50FCB09B2EEBC1CD0044E84C /* Services */,
 				50FCB09A2EEBC1C60044E84C /* Features */,
@@ -318,6 +320,7 @@
 				DEVELOPMENT_TEAM = 7C7Q223T5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bayside-Admin/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -350,6 +353,7 @@
 				DEVELOPMENT_TEAM = 7C7Q223T5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bayside-Admin/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -15,6 +15,8 @@
 		50FCB08B2EEBC0C30044E84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FCB0872EEBC0C30044E84C /* Assets.xcassets */; };
 		50FCB08C2EEBC0C30044E84C /* Bayside_UserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FCB0882EEBC0C30044E84C /* Bayside_UserApp.swift */; };
 		50FCB08D2EEBC0C30044E84C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FCB0892EEBC0C30044E84C /* MainTabView.swift */; };
+		50FCB09E2EEBC55E0044E84C /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FCB09D2EEBC5500044E84C /* SupabaseManager.swift */; };
+		50FCB0A12EEBC5920044E84C /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 50FCB0A02EEBC5920044E84C /* Supabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		50FCB0872EEBC0C30044E84C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50FCB0882EEBC0C30044E84C /* Bayside_UserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayside_UserApp.swift; sourceTree = "<group>"; };
 		50FCB0892EEBC0C30044E84C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		50FCB09D2EEBC5500044E84C /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
+		50FCB0A22EEBCA920044E84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FCB0A12EEBC5920044E84C /* Supabase in Frameworks */,
 				50FCB0792EEB9ADC0044E84C /* Storage in Frameworks */,
 				50FCB0772EEB9ADC0044E84C /* Realtime in Frameworks */,
 				50FCB0752EEB9ADC0044E84C /* PostgREST in Frameworks */,
@@ -44,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				50FCB08A2EEBC0C30044E84C /* Bayside-User */,
+				50FCB09F2EEBC5920044E84C /* Frameworks */,
 				50FCB01C2EEB98990044E84C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +65,7 @@
 		50FCB08A2EEBC0C30044E84C /* Bayside-User */ = {
 			isa = PBXGroup;
 			children = (
+				50FCB0A22EEBCA920044E84C /* Info.plist */,
 				50FCB0912EEBC1460044E84C /* Models */,
 				50FCB0902EEBC13B0044E84C /* Services */,
 				50FCB08F2EEBC12B0044E84C /* Features */,
@@ -88,6 +95,7 @@
 		50FCB0902EEBC13B0044E84C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				50FCB09D2EEBC5500044E84C /* SupabaseManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -97,6 +105,13 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		50FCB09F2EEBC5920044E84C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +135,7 @@
 				50FCB0742EEB9ADC0044E84C /* PostgREST */,
 				50FCB0762EEB9ADC0044E84C /* Realtime */,
 				50FCB0782EEB9ADC0044E84C /* Storage */,
+				50FCB0A02EEBC5920044E84C /* Supabase */,
 			);
 			productName = "Bayside-User";
 			productReference = 50FCB01B2EEB98990044E84C /* Bayside-User.app */;
@@ -179,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FCB09E2EEBC55E0044E84C /* SupabaseManager.swift in Sources */,
 				50FCB08C2EEBC0C30044E84C /* Bayside_UserApp.swift in Sources */,
 				50FCB08D2EEBC0C30044E84C /* MainTabView.swift in Sources */,
 			);
@@ -318,6 +335,7 @@
 				DEVELOPMENT_TEAM = 7C7Q223T5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bayside-User/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -350,6 +368,7 @@
 				DEVELOPMENT_TEAM = 7C7Q223T5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bayside-User/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +445,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 50FCB0712EEB9ADC0044E84C /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Storage;
+		};
+		50FCB0A02EEBC5920044E84C /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50FCB0712EEB9ADC0044E84C /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
