@@ -22,13 +22,16 @@ final class SupabaseManager {
     // You must use 'SupabaseManager.shared'; This guarantees only ONE connection exists.
     private init() {
         
-        // Load the keys safely from the Info.plist
-        guard let urlString = Bundle.main.object(forInfoDictionaryKey: "API_URL") as? String,
-              let key = Bundle.main.object(forInfoDictionaryKey: "ANON_KEY") as? String,
-              let url = URL(string: urlString) else {
-            fatalError("API key or URL missing!")
+        
+        let databaseURL = (Bundle.main.object(forInfoDictionaryKey: "API_URL") as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let anonKey = (Bundle.main.object(forInfoDictionaryKey: "ANON_KEY") as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        
+        
+        //validate and prepend "https://
+        guard let url = URL(string: "https://" + databaseURL) else {
+            fatalError("FATAL ERROR: Supabase URL is missing or invalid in Info.plist/Config.xcconfig. Check API_URL")
         }
-        self.client = SupabaseClient(supabaseURL: url, supabaseKey: key)
+        self.client = SupabaseClient(supabaseURL: url, supabaseKey: anonKey)
         print("Database Connected Successfully!")
     }
 }
