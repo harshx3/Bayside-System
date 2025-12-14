@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5057ABC72EED16D8008EC20C /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5057ABC62EED16D4008EC20C /* MenuItem.swift */; };
+		5057ABC92EED182D008EC20C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5057ABC82EED1829008EC20C /* Order.swift */; };
 		50FCB0732EEB9ADC0044E84C /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 50FCB0722EEB9ADC0044E84C /* Auth */; };
 		50FCB0752EEB9ADC0044E84C /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 50FCB0742EEB9ADC0044E84C /* PostgREST */; };
 		50FCB0772EEB9ADC0044E84C /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 50FCB0762EEB9ADC0044E84C /* Realtime */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5057ABC62EED16D4008EC20C /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		5057ABC82EED1829008EC20C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		50FCB01B2EEB98990044E84C /* Bayside-User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bayside-User.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FCB0832EEB9CA00044E84C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		50FCB0872EEBC0C30044E84C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		50FCB0912EEBC1460044E84C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5057ABC82EED1829008EC20C /* Order.swift */,
+				5057ABC62EED16D4008EC20C /* MenuItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50FCB09E2EEBC55E0044E84C /* SupabaseManager.swift in Sources */,
+				5057ABC72EED16D8008EC20C /* MenuItem.swift in Sources */,
+				5057ABC92EED182D008EC20C /* Order.swift in Sources */,
 				50FCB08C2EEBC0C30044E84C /* Bayside_UserApp.swift in Sources */,
 				50FCB08D2EEBC0C30044E84C /* MainTabView.swift in Sources */,
 			);
