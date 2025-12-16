@@ -13,10 +13,7 @@ struct Bayside_UserApp: App {
     // Testing the database connection
     // This will run asa the app launches.
     // we touch 'SupabaseManager.shared' to force it to wake up and connect
-    init() {
-        print("App Starting")
-        _ = SupabaseManager.shared // this triggers the 'private init' from SupabaseManager
-    }
+   
     var body: some Scene {
         WindowGroup {
             MainTabView()
