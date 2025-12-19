@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5027BE882EF2642B00D7E34E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027BE872EF2641D00D7E34E /* MenuView.swift */; };
+		5027BE8A2EF35F4D00D7E34E /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027BE892EF35F4D00D7E34E /* ProductDetailView.swift */; };
 		5057ABC72EED16D8008EC20C /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5057ABC62EED16D4008EC20C /* MenuItem.swift */; };
 		5057ABC92EED182D008EC20C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5057ABC82EED1829008EC20C /* Order.swift */; };
 		5057ABD12EEF2C56008EC20C /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5057ABD02EEF2C52008EC20C /* MenuService.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		5027BE872EF2641D00D7E34E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		5027BE892EF35F4D00D7E34E /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		5057ABC62EED16D4008EC20C /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		5057ABC82EED1829008EC20C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		5057ABD02EEF2C52008EC20C /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				5027BE872EF2641D00D7E34E /* MenuView.swift */,
 				5057ABD42EF10A85008EC20C /* MenuViewModel.swift */,
 				50FCB0892EEBC0C30044E84C /* MainTabView.swift */,
+				5027BE892EF35F4D00D7E34E /* ProductDetailView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50FCB09E2EEBC55E0044E84C /* SupabaseManager.swift in Sources */,
+				5027BE8A2EF35F4D00D7E34E /* ProductDetailView.swift in Sources */,
 				5057ABC72EED16D8008EC20C /* MenuItem.swift in Sources */,
 				5057ABD12EEF2C56008EC20C /* MenuService.swift in Sources */,
 				5057ABD32EF0C405008EC20C /* MenuCategory.swift in Sources */,

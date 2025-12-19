@@ -63,9 +63,17 @@ struct MenuView: View {
                         let items = viewModel.items(for: category.id)
                         
                         ForEach(items) { item in
-                            MenuItemView(item: item)
-                            Divider() // Line between items
-                                .padding(.leading)
+                            NavigationLink(destination: ProductDetailView(item: item)) {
+                                MenuItemView(
+                                    item: item
+                                )
+                            }
+                            .buttonStyle(.plain)
+                            
+                            Divider()
+                                .padding(
+                                    .leading
+                                )
                         }
                         
                     } header: {
