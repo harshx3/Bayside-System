@@ -9,6 +9,11 @@
 import SwiftUI
 
 struct ProductDetailView: View {
+    
+    // Get the Cart
+    @EnvironmentObject var cartManager: CartManager
+    @Environment(\.dismiss) var dismiss // to close the screen
+    
     let item: MenuItem
     
     // We will use this later for "Add to Cart" logic
@@ -101,7 +106,14 @@ struct ProductDetailView: View {
     
     // MARK: - Actions
     func addToOrder() {
-        print("🛒 Added \(quantity) x \(item.name) to cart")
+        cartManager
+            .add(
+                item: item,
+                quantity: quantity,
+                notes: nil
+            )
+        // Close the screen and go back to menu
+        dismiss()
     }
 }
 
