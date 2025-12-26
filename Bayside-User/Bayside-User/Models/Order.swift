@@ -13,15 +13,15 @@ struct Order: Identifiable, Codable {
     var status: String // "New", "Coocking", "Ready", "Delivered"
     var total: Double
     var notes: String?
-    var customerId: UUID?
+    var userId: UUID?
     var createdAt: Date?
     
     enum CodingKeys: String, CodingKey {
         case id
         case status
-        case total
-        case notes
-        case customerId = "customer_id"
+        case total = "total_amount"
+        case notes = "customer_note"
+        case userId = "user_id"
         case createdAt = "created_at"
     }
 }

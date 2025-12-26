@@ -34,4 +34,18 @@ class CartManager: ObservableObject {
     func clearCart() {
         items.removeAll()
     }
+    
+    func checkout() async throws {
+        let service = OrderSevice()
+        
+        // Send data to supabase
+        try await service
+            .placeOrder(
+                items: self.items,
+                total: self.total,
+                notes: nil
+            )
+        // if successful, clear the local cart
+        self.clearCart()
+    }
 }

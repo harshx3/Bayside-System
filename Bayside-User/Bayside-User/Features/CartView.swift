@@ -11,6 +11,11 @@ import Foundation
 struct CartView: View {
     // Listen to the Manager
      @EnvironmentObject var cartManager: CartManager
+    
+        @State private var isCheckingOut = false
+        @State private var showError = false
+        @State private var errorMessage = ""
+    
     var body: some View {
        
         NavigationStack {
@@ -97,24 +102,41 @@ struct CartView: View {
                         )
                         
                         Button(action: {
-                            print("Proceeding to Checkout...")
-                        }) {
-                            Text("Checkout")
-                                .font(
-                                    .headline
-                                )
-                                .foregroundStyle(
-                                    .white
-                                )
-                                .frame(
-                                    maxWidth: .infinity
-                                )
-                                .padding()
-                                .background(
-                                    Color.blue
-                                )
-//                                .clipShape()
-                        }
+                                                    Task {
+                                                        isCheckingOut = true
+                                                        do {
+                                                            try await cartManager.checkout()
+                                                            // Success is handled automatically (cart empties -> view changes)
+                                                        } catch {
+                                                            errorMessage = "Checkout failed: \(error.localizedDescription)"
+                                                            showError = true
+                                                        }
+                                                        isCheckingOut = false
+                                                    }
+                                                }) {
+                                                    HStack {
+                                                        if isCheckingOut {
+                                                            ProgressView()
+                                                                .tint(.white)
+                                                        } else {
+                                                            Text("Checkout")
+                                                        }
+                                                    }
+                                                    .font(.headline)
+                                                    .foregroundColor(.white)
+                                                    .frame(maxWidth: .infinity)
+                                                    .padding()
+                                                    .background(isCheckingOut ? Color.gray : Color.blue)
+                                                    .cornerRadius(12)
+                                                }
+                                                .disabled(isCheckingOut) // Prevent double taps
+                                                .padding(.horizontal)
+                                                // Add this alert modifier to show errors
+                                                .alert("Order Error", isPresented: $showError) {
+                                                    Button("OK", role: .cancel) { }
+                                                } message: {
+                                                    Text(errorMessage)
+                                                }
                         .padding(
                             .horizontal
                         )

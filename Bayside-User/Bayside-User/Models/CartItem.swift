@@ -7,11 +7,13 @@
 
 import Foundation
 
+
 struct CartItem: Identifiable, Codable {
     var id: UUID = UUID() // Unique ID for this specific instance in the cart
     var menuItem: MenuItem
     var quantity: Int
     var notes: String?
+    
     
     // Helper to calculate total for this line
     var total: Double {
