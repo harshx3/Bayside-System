@@ -13,6 +13,9 @@
 		5027BE8E2EF4FFFC00D7E34E /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027BE8D2EF4FFF400D7E34E /* CartManager.swift */; };
 		5027BE902EF5043C00D7E34E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027BE8F2EF5043C00D7E34E /* CartView.swift */; };
 		5027BE922EFA467D00D7E34E /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027BE912EFA467600D7E34E /* OrderService.swift */; };
+		5027BE942EFF90C200D7E34E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027BE932EFF90BB00D7E34E /* AuthViewModel.swift */; };
+		5027BE962EFF92D500D7E34E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027BE952EFF92CE00D7E34E /* LoginView.swift */; };
+		5027BEFE2F0E074900D7E34E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027BEFD2F0E074900D7E34E /* ProfileView.swift */; };
 		5057ABC72EED16D8008EC20C /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5057ABC62EED16D4008EC20C /* MenuItem.swift */; };
 		5057ABC92EED182D008EC20C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5057ABC82EED1829008EC20C /* Order.swift */; };
 		5057ABD12EEF2C56008EC20C /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5057ABD02EEF2C52008EC20C /* MenuService.swift */; };
@@ -37,6 +40,9 @@
 		5027BE8D2EF4FFF400D7E34E /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		5027BE8F2EF5043C00D7E34E /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		5027BE912EFA467600D7E34E /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
+		5027BE932EFF90BB00D7E34E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		5027BE952EFF92CE00D7E34E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5027BEFD2F0E074900D7E34E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5057ABC62EED16D4008EC20C /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		5057ABC82EED1829008EC20C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		5057ABD02EEF2C52008EC20C /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
@@ -109,11 +115,13 @@
 		50FCB08F2EEBC12B0044E84C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				5027BE952EFF92CE00D7E34E /* LoginView.swift */,
 				5027BE872EF2641D00D7E34E /* MenuView.swift */,
 				5057ABD42EF10A85008EC20C /* MenuViewModel.swift */,
 				50FCB0892EEBC0C30044E84C /* MainTabView.swift */,
 				5027BE892EF35F4D00D7E34E /* ProductDetailView.swift */,
 				5027BE8F2EF5043C00D7E34E /* CartView.swift */,
+				5027BEFD2F0E074900D7E34E /* ProfileView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 		50FCB0912EEBC1460044E84C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5027BE932EFF90BB00D7E34E /* AuthViewModel.swift */,
 				5027BE8B2EF4FF0600D7E34E /* CartItem.swift */,
 				5057ABD22EF0C3FA008EC20C /* MenuCategory.swift */,
 				5057ABC82EED1829008EC20C /* Order.swift */,
@@ -233,14 +242,17 @@
 				5027BE902EF5043C00D7E34E /* CartView.swift in Sources */,
 				5027BE8A2EF35F4D00D7E34E /* ProductDetailView.swift in Sources */,
 				5027BE8C2EF4FF1200D7E34E /* CartItem.swift in Sources */,
+				5027BE942EFF90C200D7E34E /* AuthViewModel.swift in Sources */,
 				5057ABC72EED16D8008EC20C /* MenuItem.swift in Sources */,
 				5057ABD12EEF2C56008EC20C /* MenuService.swift in Sources */,
 				5057ABD32EF0C405008EC20C /* MenuCategory.swift in Sources */,
+				5027BEFE2F0E074900D7E34E /* ProfileView.swift in Sources */,
 				5027BE922EFA467D00D7E34E /* OrderService.swift in Sources */,
 				5027BE882EF2642B00D7E34E /* MenuView.swift in Sources */,
 				5057ABC92EED182D008EC20C /* Order.swift in Sources */,
 				50FCB08C2EEBC0C30044E84C /* Bayside_UserApp.swift in Sources */,
 				50FCB08D2EEBC0C30044E84C /* MainTabView.swift in Sources */,
+				5027BE962EFF92D500D7E34E /* LoginView.swift in Sources */,
 				5057ABD52EF10A8C008EC20C /* MenuViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
